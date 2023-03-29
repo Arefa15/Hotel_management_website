@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<link href='style1.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+<head>
+<title>The Lowell Banani</title>
+<style> 
+      #map { 
+        width: 100%; 
+        height: 400px; 
+        background-color: grey; 
+      } 
+    </style> 
+</head>
+
+<body style="background-color:black; padding-left:25px; padding-right:25px;">
+<div style="position: relative;z-index:1000;top:10px;padding:20px;">
+<img src="hotelimg/facebook.png" style="width:30px;margin:0px 5px;">
+<img src="hotelimg/gmail.png" style="width:30px;margin:0px 5px;">
+<img src="hotelimg/instagram.png" style="width:30px;margin:0px 5px;">
+<img src="hotelimg/youtube.png" style="width:30px;margin:0px 5px;">
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin:24px 0;height: 80px; z-index:1000; opacity:0.7;">
+  <a class="navbar-brand" href="home1.html"><img src="hotelimg/logo.png" style="width:90px;"></a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navb">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="home1.html">Home</a>
+      </li>
+      
+       <li class="nav-item">
+        <div class="dropdown">
+          <div class="dropbtn"><a href="about.html">About Us</a></div>
+          <div class="dropdown-content">
+            <a href="#">Managing Directors</a>
+            <a href="#">General managers</a>
+          </div>
+        </div>
+      </li>
+      
+      <li class="nav-item">
+        <div class="dropdown">
+          <div class="dropbtn"><a href="acom.html">Accommodation</a></div>
+          <div class="dropdown-content">
+            <a href="#">Executive Premium Deluxe</a>
+    		<a href="#">Business Suite</a>
+   			<a href="#">Executive Suite</a>
+   			<a href="#">Peace Penthouse Suite</a>
+          </div>
+        </div>
+      </li>
+      
+      <li class="nav-item"><a class="nav-link" href="restau.html">Restaurant</a></li>
+        <li class="nav-item"><a class="nav-link" href="entertain.html">Entertainment</a></li>
+        <li class="nav-item"><a class="nav-link" href="promotion.html">Promotion</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-success my-2 my-sm-0" type="button">Search</button>
+    </form>
+  </div>
+</nav>
+<h1 style="font-size:50px; color:white">CONTACT</h1>
+
+<p>My Google Maps Demo</p> 
+    <div id="map"></div> 
+    
+    <script> 
+      function initMap() { 
+        var test= {lat: 23.7913, lng: 90.4045}; 
+        var map = new google.maps.Map(document.getElementById('map'), { 
+          zoom: 8, 
+          center: test 
+        }); 
+        var marker = new google.maps.Marker({ 
+          position: test, 
+          map: map 
+        }); 
+      } 
+    </script> 
+    <script async defer 
+    src= 
+"https://maps.googleapis.com/maps/api/js?key=AIzaSyBAw1ZQpOi3wCs5PeurG7wAnn9aL2H13-4&callback=initMap"> 
+    </script> 
+    
+</body>
+</html>
